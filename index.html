@@ -4,28 +4,25 @@
     <title>Saludar</title>
 </head>
 <body>
-    <h1>Hola</h1>
-    <form id="saludar-form">
-      <label for="nombre">Cual es tu Nombre:</label>
-        <input type="text" id="nombre" required/> 
-        <label for="edad">Edad :</label>
-        <input type="number" id="edad" required/>
-        <input type="radio" id="genero-f" name="genero" value="F" required/>
-        <label for="genero-f">Femenino</label>
-        <input type="radio" id="genero-m" name="genero" value="M" required/>
-        <label for="genero-m">Masculino</label>
-        <div>
-            <label for="idioma">Idioma:</label>
-            <select id="idioma" required>
-                <option value="ES">Español</option> 
-                <option value="EN">Inglés</option>
-                <option value="FR">Francés</option>
-                <option value="PT">Portugués</option>
-            </select>
-        </div>
-        <input type="submit" value="Saludar" id="saludar-button" />
+    <h1>Totalizador</h1>
+    <form id="totalizador-form">
+      <label for="cantidad-item">Cantidad de Item:</label>
+      <input type="number" id="cantidad-item" />
+      <label for="precio-item">Precio de Item:</label>
+      <input type="number" id="precio-item" />
+
+      <label for="estado">Estado:</label>
+      <select id="estado">
+        <option value="UT">UT</option>
+        <option value="NV">NV</option>
+        <option value="TX">TX</option>
+        <option value="AL">AL</option>
+        <option value="CA">CA</option>
+      </select>
+
+      <input type="submit" value="Totalizador" id="totalizar-button" />
     </form>
-     <div id="resultado-div"></div>
+    <div id="resultado-div"></div>
     <script type="module" src="./src/presenter.js"></script>
 </body>  
 </html>
